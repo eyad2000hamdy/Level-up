@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<meta name="theme-color" content="#0a0e2a">
+<meta name="description" content="LEVEL UP — رحلتك نحو الإنجاز">
+<title>LEVEL UP — رحلتك نحو الإنجاز</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-screen="splash">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4 3 6.5v13L9 17l6 3 6-2.5v-13L15 7 9 4Zm0 2.2 4.5 2.25v9.35L9 15.55V6.2Zm-4 1.6 2-.85v8.6l-2 .85V7.8Zm14 8.4-2 .85V8.45l2-.85v8.6Z"/></symbol>
+    <symbol id="i-today" viewBox="0 0 24 24"><path d="M7 2h2v2h6V2h2v2h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3V2Zm13 8H4v9h16v-9ZM4 8h16V6H4v2Zm4 4h3v3H8v-3Z"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M5 3h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a1 1 0 0 1 1-1Zm1 2v12.3A3 3 0 0 1 7 17h10V5H6Zm1 14h10v-0.5H7a1 1 0 0 0 0 .5Z"/></symbol>
+    <symbol id="i-teacher" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3ZM5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 3.8-7-3.8Z"/></symbol>
+    <symbol id="i-lecture" viewBox="0 0 24 24"><path d="M4 4h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-6v2h3v2H7v-2h3v-2H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm1 2v8h14V6H5Zm5 1.5 5 2.5-5 2.5v-5Z"/></symbol>
+    <symbol id="i-backlog" viewBox="0 0 24 24"><path d="M4 4h16v4H4V4Zm1 5h14v11a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V9Zm4 3v2h6v-2H9Z"/></symbol>
+    <symbol id="i-session" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16Zm-1 3v5.4l3.8 2.3 1-1.6-2.8-1.7V7h-2Z"/></symbol>
+    <symbol id="i-review" viewBox="0 0 24 24"><path d="M12 5V2L7 6l5 4V7a5 5 0 0 1 0 10 5 5 0 0 1-4.6-3H5.3A7 7 0 1 0 12 5Z"/></symbol>
+    <symbol id="i-pet" viewBox="0 0 24 24"><path d="M12 21c-4.4 0-7-2.6-7-5.5 0-2 1.3-3.4 3-4.4C9.6 10.2 10 9 10 8c0-2 1-3.5 2-5 1 1.5 2 3 2 5 0 1 .4 2.2 2 3.1 1.7 1 3 2.400 3 4.400 0 2.900-2.600 5.500-7 5.500Z"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 2h12v2h3v3a4 4 0 0 1-4 4h-.3A6 6 0 0 1 13 14.9V17h3v2h1v3H7v-3h1v-2h3v-2.100A6 6 0 0 1 7.300 11H7a4 4 0 0 1-4-4V4h3V2Zm0 4H5v1a2 2 0 0 0 1 1.700V6Zm12 0v2.700A2 2 0 0 0 19 7V6h-1Z"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3h2v16h16v2H3V3Zm4 9h3v6H7v-6Zm5-5h3v11h-3V7Zm5 3h3v8h-3v-8Z"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><path d="m19.400 13 .1-1-.1-1 2.100-1.600-2-3.500-2.400 1a8 8 0 0 0-1.700-1L15 3.400h-4l-.4 2.500a8 8 0 0 0-1.700 1l-2.400-1-2 3.500L6.600 11l-.1 1 .1 1-2.100 1.600 2 3.500 2.400-1a8 8 0 0 0 1.700 1l.4 2.500h4l.4-2.500a8 8 0 0 0 1.700-1l2.400 1 2-3.500L19.400 13ZM13 15.500a3.500 3.500 0 1 1 0-7 3.500 3.500 0 0 1 0 7Z"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M11 4h2v7h7v2h-7v7h-2v-7H4v-2h7V4Z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m5.700 4.300 6.300 6.300 6.300-6.300 1.400 1.400-6.300 6.300 6.300 6.300-1.400 1.400-6.300-6.300-6.300 6.300-1.400-1.400 6.300-6.300-6.300-6.300 1.400-1.400Z"/></symbol>
+    <symbol id="i-zoom-in" viewBox="0 0 24 24"><path d="M10 3a7 7 0 0 1 5.600 11.200l5.100 5.100-1.400 1.400-5.100-5.100A7 7 0 1 1 10 3Zm0 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm-1 2h2v2h2v2h-2v2H9v-2H7V9h2V7Z"/></symbol>
+    <symbol id="i-zoom-out" viewBox="0 0 24 24"><path d="M10 3a7 7 0 0 1 5.600 11.200l5.100 5.100-1.400 1.400-5.100-5.100A7 7 0 1 1 10 3Zm0 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10ZM7 9h6v2H7V9Z"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m12 3 10 9h-3v9h-5v-6h-4v6H5v-9H2l10-9Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m9.500 16.200-4-4L4 13.700l5.500 5.500L20.500 8.200 19 6.700l-9.500 9.500Z"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.500v15l13-7.500L7 4.500Z"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="m12 2 2.300 6.700L21 11l-6.700 2.300L12 20l-2.300-6.700L3 11l6.700-2.300L12 2Zm7 12 1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6Zm0 5h18v2H3v-2Zm0 5h18v2H3v-2Z"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24"><path d="m4 16.500 10.800-10.800 3.500 3.500L7.500 20H4v-3.500ZM16.200 4.300l1.600-1.600a1 1 0 0 1 1.400 0l2.100 2.100a1 1 0 0 1 0 1.400l-1.600 1.600-3.500-3.500Z"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M9 3h6l1 2h4v2H4V5h4l1-2Zm-3 6h12l-1 12H7L6 9Z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.500 2.900 6 6.600.9-4.800 4.600 1.200 6.500L12 17.300l-5.900 3.200 1.200-6.500L2.500 9.400l6.600-.9 2.900-6Z"/></symbol>
+    <symbol id="i-gem" viewBox="0 0 24 24"><path d="M7 3h10l5 6-10 12L2 9l5-6Zm.9 2L5.200 8.500h13.600L16.100 5H7.900Zm-2.100 5L12 17.800 18.200 10H5.800Z"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M11 3h2v9.200l3.300-3.300 1.400 1.400L12 16l-5.700-5.700 1.400-1.400 3.300 3.300V3ZM4 18h16v3H4v-3Z"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 3l5.700 5.700-1.400 1.400L13 6.800V16h-2V6.800L7.700 10.100 6.300 8.700 12 3ZM4 18h16v3H4v-3Z"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 2c1 3 4 5 4 9 0 1.300-.4 2.400-1 3.300.2-1 .1-2-.7-3-.4 1.600-1.500 2.400-2.300 2.700.4-2-.2-4-2-5.500C9.800 9.800 9 11 9 12.600c0 .6.100 1.100.3 1.600C7.900 13.300 7 11.800 7 10c0-3.500 3.700-5.500 5-8Zm0 20a5 5 0 0 1-5-5c0-.8.200-1.500.5-2.100 1 1.500 2.500 2.500 4.500 2.500s3.500-1 4.500-2.500c.3.600.5 1.300.5 2.100a5 5 0 0 1-5 5Z"/></symbol>
+    <symbol id="m-scroll" viewBox="0 0 24 24"><path d="M6 3h11a3 3 0 0 1 3 3v1h-3v10a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-1h11v1a1 1 0 0 0 2 0V6a1 1 0 0 0-1-1H6V3Z"/></symbol>
+    <symbol id="m-atom" viewBox="0 0 24 24"><path d="M12 10a2 2 0 1 1 0 4 2 2 0 0 1 0-4Zm0-7c1.400 0 3 2.600 3 9s-1.600 9-3 9-3-2.600-3-9 1.600-9 3-9Zm7.800 4.500c.7 1.200-1.200 3.700-6.900 6.800-5.700 3.200-8.700 3.500-9.400 2.300s1.200-3.700 6.900-6.800c5.700-3.200 8.700-3.500 9.400-2.300Zm-.2 9c-.7 1.200-3.700.9-9.400-2.300-5.700-3.100-7.600-5.600-6.900-6.800s3.700-.9 9.400 2.300c5.700 3.100 7.600 5.600 6.900 6.800Z"/></symbol>
+    <symbol id="m-sigma" viewBox="0 0 24 24"><path d="M5 3h14v3h-2V5H9.500l5 7-5 7H17v-1h2v3H5l6.500-9L5 3Z"/></symbol>
+    <symbol id="m-globe" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1 2.100V8H8.200A8 8 0 0 1 11 4.100ZM4.300 13h3.700c.1 1.400.4 2.700.9 3.800A8 8 0 0 1 4.300 13Zm0-2a8 8 0 0 1 4.600-5.600c-.5 1.100-.8 2.400-.9 3.800H4.300ZM11 19.900A8 8 0 0 1 8.600 16H11v3.900Zm0-5.900H8c-.1-1-.1-2 0-3h3v3Zm2 5.900V16h2.400a8 8 0 0 1-2.400 3.900ZM13 14v-3h3c.1 1 .1 2 0 3h-3Zm0-5V4.100A8 8 0 0 1 15.800 8H13Zm2.100-2.600A8 8 0 0 1 19.700 11H16c-.1-1.400-.4-2.700-.9-3.800 0-.2 0-.4 0-.8ZM16 13h3.700a8 8 0 0 1-4.600 5.600c.5-1.100.8-2.400.9-3.600Z"/></symbol>
+    <symbol id="m-flask" viewBox="0 0 24 24"><path d="M9 2h6v2h-1v5.500l5.600 9.300A2 2 0 0 1 17.900 22H6.100a2 2 0 0 1-1.700-3.200L10 9.500V4H9V2Zm3 9.200L7.800 18h8.400L12 11.200Z"/></symbol>
+    <symbol id="m-pen" viewBox="0 0 24 24"><path d="M3 21v-4.200L16.500 3.300a1 1 0 0 1 1.400 0l2.800 2.800a1 1 0 0 1 0 1.400L7.200 21H3Zm2-2h1.200L17 8.200 15.800 7 5 17.800V19Z"/></symbol>
+    <symbol id="m-landmark" viewBox="0 0 24 24"><path d="M12 2 2 7v2h20V7L12 2ZM4 10h3v8H4v-8Zm6 0h4v8h-4v-8Zm7 0h3v8h-3v-8ZM2 20h20v2H2v-2Z"/></symbol>
+    <symbol id="m-code" viewBox="0 0 24 24"><path d="m8.500 7.500-1.400-1.400L1.200 12l5.900 5.900 1.400-1.400L4 12l4.500-4.500Zm7 0L20 12l-4.500 4.500 1.400 1.400 5.900-5.900-5.900-5.900-1.400 1.400ZM13.500 4l-3 16h2l3-16h-2Z"/></symbol>
+    <symbol id="m-leaf" viewBox="0 0 24 24"><path d="M20 3C9 3 4 9 4 15c0 1.200.2 2.200.6 3.100L3 19.700 4.400 21l1.600-1.600A8 8 0 0 0 11 21c6.500 0 9-7 9-18Zm-9 16c-1.500 0-2.800-.6-3.800-1.600C8.200 14.600 11 11.300 15 9c-3 2.500-4.600 5-5.300 7.300.4.100.9.200 1.300.2 3 0 5.100-2.200 6-5.300.3 2.800-.5 7.800-6 7.800Z"/></symbol>
+  </defs>
+</svg>
+
+<canvas id="worldCanvas" aria-label="عالم LEVEL UP ثلاثي الأبعاد"></canvas>
+<div id="atmosphere" aria-hidden="true"></div>
+<div id="vignette" aria-hidden="true"></div>
+
+<div id="webglFallback" class="overlay-message" hidden>
+  <div class="overlay-card">
+    <h2>المتصفح لا يدعم WebGL</h2>
+    <p>يحتاج LEVEL UP إلى WebGL لعرض العالم ثلاثي الأبعاد. جرّب متصفحًا حديثًا أو فعّل تسريع الرسوميات من إعدادات المتصفح.</p>
+  </div>
+</div>
+
+<div id="loader" class="loader">
+  <div class="loader-orb"></div>
+  <p class="loader-title">LEVEL UP</p>
+  <div class="loader-bar"><span id="loaderBar"></span></div>
+  <p class="loader-text" id="loaderText">جارٍ تجهيز العالم</p>
+</div>
+
+<noscript>
+  <div class="overlay-message">
+    <div class="overlay-card">
+      <h2>يلزم تفعيل JavaScript</h2>
+      <p>لا يعمل LEVEL UP بدون JavaScript.</p>
+    </div>
+  </div>
+</noscript>
+
+<main id="app">
+
+  <section id="splash" class="screen" data-screen-id="splash">
+    <div class="splash-content">
+      <p class="splash-kicker">عالمك الدراسي في انتظارك</p>
+      <h1 class="splash-title" aria-label="LEVEL UP">
+        <span>LEVEL</span><span>UP</span>
+      </h1>
+      <p class="splash-tagline">رحلتك نحو الإنجاز</p>
+      <div class="splash-actions">
+        <button class="btn btn-primary btn-xl" type="button" data-action="start-journey">ابدأ رحلتك</button>
+        <div class="splash-secondary">
+          <button class="btn btn-ghost" type="button" data-action="open-login">تسجيل الدخول</button>
+          <button class="btn btn-ghost" type="button" data-action="open-signup">إنشاء حساب جديد</button>
+        </div>
+      </div>
+      <p class="splash-note">بياناتك تُحفظ على جهازك فقط في هذه النسخة</p>
+    </div>
+  </section>
+
+  <section id="authScreen" class="screen" data-screen-id="auth" hidden>
+    <div class="glass-card auth-card">
+      <button class="icon-btn auth-back" type="button" data-action="auth-back" aria-label="رجوع">
+        <svg class="icon"><use href="#i-close"/></svg>
+      </button>
+      <div class="auth-tabs" role="tablist">
+        <button class="auth-tab" type="button" role="tab" data-auth-tab="signup" aria-selected="true">حساب جديد</button>
+        <button class="auth-tab" type="button" role="tab" data-auth-tab="login" aria-selected="false">لدي حساب</button>
+      </div>
+
+      <form id="signupForm" class="auth-form" novalidate autocomplete="off">
+        <h2>أنشئ هويتك في العالم</h2>
+        <label class="field">
+          <span>اسم المستخدم</span>
+          <input type="text" id="signupUsername" name="username" minlength="3" maxlength="24" required placeholder="مثال: ahmed2026">
+          <small class="field-error" data-error-for="signupUsername"></small>
+        </label>
+        <label class="field">
+          <span>كلمة المرور</span>
+          <input type="password" id="signupPassword" name="password" minlength="4" maxlength="64" required autocomplete="new-password">
+          <small class="field-error" data-error-for="signupPassword"></small>
+        </label>
+        <label class="field">
+          <span>تأكيد كلمة المرور</span>
+          <input type="password" id="signupConfirm" name="confirm" minlength="4" maxlength="64" required autocomplete="new-password">
+          <small class="field-error" data-error-for="signupConfirm"></small>
+        </label>
+        <p class="hint">الحساب محلي على هذا الجهاز ولا توجد مزامنة بين الأجهزة في هذه النسخة.</p>
+        <button class="btn btn-primary btn-block" type="submit">إنشاء الحساب</button>
+      </form>
+
+      <form id="loginForm" class="auth-form" novalidate autocomplete="off" hidden>
+        <h2>مرحبًا بعودتك</h2>
+        <div id="localAccounts" class="account-list" aria-live="polite"></div>
+        <label class="field">
+          <span>اسم المستخدم</span>
+          <input type="text" id="loginUsername" name="username" required>
+          <small class="field-error" data-error-for="loginUsername"></small>
+        </label>
+        <label class="field">
+          <span>كلمة المرور</span>
+          <input type="password" id="loginPassword" name="password" required autocomplete="current-password">
+          <small class="field-error" data-error-for="loginPassword"></small>
+        </label>
+        <button class="btn btn-primary btn-block" type="submit">دخول</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="onboarding" class="screen" data-screen-id="onboarding" hidden>
+    <div class="onboard-shell">
+      <div class="onboard-progress" aria-hidden="true"><span id="onboardProgressBar"></span></div>
+      <div class="guide">
+        <div class="guide-avatar" aria-hidden="true"><div class="guide-orb"></div></div>
+        <div class="guide-bubble" id="guideBubble" aria-live="polite">أهلًا بك. أنا مرشد رحلتك، سأسألك بضعة أسئلة لأبني لك عالمك.</div>
+      </div>
+
+      <form id="onboardForm" class="onboard-stage" novalidate autocomplete="off">
+
+        <div class="onboard-step" data-step="1" data-guide="ما اسمك يا بطل؟ هذا الاسم سيظهر في عالمك.">
+          <label class="field field-big">
+            <span>اسم الطالب</span>
+            <input type="text" id="obName" name="name" maxlength="40" required placeholder="اكتب اسمك">
+            <small class="field-error" data-error-for="obName"></small>
+          </label>
+        </div>
+
+        <div class="onboard-step" data-step="2" data-guide="في أي مرحلة تعليمية أنت الآن؟" hidden>
+          <div class="choice-grid" id="obStageChoices" role="radiogroup" aria-label="المرحلة التعليمية">
+            <label class="choice"><input type="radio" name="stage" value="primary" required><span>الابتدائية</span></label>
+            <label class="choice"><input type="radio" name="stage" value="middle"><span>الإعدادية</span></label>
+            <label class="choice"><input type="radio" name="stage" value="secondary"><span>الثانوية</span></label>
+            <label class="choice"><input type="radio" name="stage" value="university"><span>الجامعة</span></label>
+            <label class="choice"><input type="radio" name="stage" value="other"><span>مرحلة أخرى</span></label>
+          </div>
+          <small class="field-error" data-error-for="stage"></small>
+        </div>
+
+        <div class="onboard-step" data-step="3" data-guide="وما صفك أو سنتك الدراسية؟" hidden>
+          <label class="field field-big">
+            <span>الصف أو السنة الدراسية</span>
+            <input type="text" id="obGrade" name="grade" maxlength="40" required placeholder="مثال: الصف الثالث الثانوي">
+            <small class="field-error" data-error-for="obGrade"></small>
+          </label>
+        </div>
+
+        <div class="onboard-step" data-step="4" data-guide="من أي بلد أنت؟ هذه الخطوة اختيارية ويمكنك تخطيها." hidden>
+          <label class="field field-big">
+            <span>البلد (اختياري)</span>
+            <input type="text" id="obCountry" name="country" maxlength="40" placeholder="مثال: مصر">
+          </label>
+        </div>
+
+        <div class="onboard-step" data-step="5" data-guide="ما هدفك الدراسي الأكبر؟ سأبني الخطة حوله." hidden>
+          <div class="choice-grid" role="radiogroup" aria-label="الهدف الدراسي">
+            <label class="choice"><input type="radio" name="goal" value="top-score" required><span>التفوق والدرجات العالية</span></label>
+            <label class="choice"><input type="radio" name="goal" value="pass"><span>النجاح بثقة</span></label>
+            <label class="choice"><input type="radio" name="goal" value="catch-up"><span>تعويض ما فاتني</span></label>
+            <label class="choice"><input type="radio" name="goal" value="consistency"><span>الانتظام في المذاكرة</span></label>
+            <label class="choice"><input type="radio" name="goal" value="exam-prep"><span>الاستعداد لامتحان قريب</span></label>
+          </div>
+          <label class="field">
+            <span>هدف بكلماتك (اختياري)</span>
+            <input type="text" id="obGoalText" name="goalText" maxlength="120" placeholder="مثال: أريد مجموعًا عاليًا في الرياضيات">
+          </label>
+          <small class="field-error" data-error-for="goal"></small>
+        </div>
+
+        <div class="onboard-step" data-step="6" data-guide="كيف تصف مستواك الدراسي حاليًا؟" hidden>
+          <div class="choice-grid" role="radiogroup" aria-label="المستوى الحالي">
+            <label class="choice"><input type="radio" name="level" value="1" required><span>أحتاج لبداية قوية</span></label>
+            <label class="choice"><input type="radio" name="level" value="2"><span>متوسط</span></label>
+            <label class="choice"><input type="radio" name="level" value="3"><span>جيد</span></label>
+            <label class="choice"><input type="radio" name="level" value="4"><span>متقدم</span></label>
+          </div>
+          <small class="field-error" data-error-for="level"></small>
+        </div>
+
+        <div class="onboard-step" data-step="7" data-guide="كم دقيقة تستطيع المذاكرة في كل يوم؟ ضع صفرًا لليوم الذي لا تدرس فيه." hidden>
+          <div class="days-minutes" id="obDailyMinutes">
+            <label class="day-minutes"><span>السبت</span><input type="number" name="min-6" min="0" max="720" step="5" value="120" inputmode="numeric"><em>دقيقة</em></label>
+            <label class="day-minutes"><span>الأحد</span><input type="number" name="min-0" min="0" max="720" step="5" value="120" inputmode="numeric"><em>دقيقة</em></label>
+            <label class="day-minutes"><span>الاثنين</span><input type="number" name="min-1" min="0" max="720" step="5" value="120" inputmode="numeric"><em>دقيقة</em></label>
+            <label class="day-minutes"><span>الثلاثاء</span><input type="number" name="min-2" min="0" max="720" step="5" value="120" inputmode="numeric"><em>دقيقة</em></label>
+            <label class="day-minutes"><span>الأربعاء</span><input type="number" name="min-3" min="0" max="720" step="5" value="120" inputmode="numeric"><em>دقيقة</em></label>
+            <label class="day-minutes"><span>الخميس</span><input type="number" name="min-4" min="0" max="720" step="5" value="120" inputmode="numeric"><em>دقيقة</em></label>
+            <label class="day-minutes"><span>الجمعة</span><input type="number" name="min-5" min="0" max="720" step="5" value="60" inputmode="numeric"><em>دقيقة</em></label>
+          </div>
+          <small class="field-error" data-error-for="dailyMinutes"></small>
+        </div>
+
+        <div class="onboard-step" data-step="8" data-guide="أي الأيام مشغولة، وأيها يوم راحة؟ لن أجدول لك مذاكرة في يوم الراحة." hidden>
+          <fieldset class="chip-group">
+            <legend>الأيام المشغولة (وقت دراسة أقل)</legend>
+            <label class="chip"><input type="checkbox" name="busy" value="6"><span>السبت</span></label>
+            <label class="chip"><input type="checkbox" name="busy" value="0"><span>الأحد</span></label>
+            <label class="chip"><input type="checkbox" name="busy" value="1"><span>الاثنين</span></label>
+            <label class="chip"><input type="checkbox" name="busy" value="2"><span>الثلاثاء</span></label>
+            <label class="chip"><input type="checkbox" name="busy" value="3"><span>الأربعاء</span></label>
+            <label class="chip"><input type="checkbox" name="busy" value="4"><span>الخميس</span></label>
+            <label class="chip"><input type="checkbox" name="busy" value="5"><span>الجمعة</span></label>
+          </fieldset>
+          <fieldset class="chip-group">
+            <legend>أيام الراحة</legend>
+            <label class="chip"><input type="checkbox" name="rest" value="6"><span>السبت</span></label>
+            <label class="chip"><input type="checkbox" name="rest" value="0"><span>الأحد</span></label>
+            <label class="chip"><input type="checkbox" name="rest" value="1"><span>الاثنين</span></label>
+            <label class="chip"><input type="checkbox" name="rest" value="2"><span>الثلاثاء</span></label>
+            <label class="chip"><input type="checkbox" name="rest" value="3"><span>الأربعاء</span></label>
+            <label class="chip"><input type="checkbox" name="rest" value="4"><span>الخميس</span></label>
+            <label class="chip"><input type="checkbox" name="rest" value="5"><span>الجمعة</span></label>
+          </fieldset>
+          <small class="field-error" data-error-for="days"></small>
+        </div>
+
+        <div class="onboard-step" data-step="9" data-guide="هل لديك امتحانات قادمة؟ أضفها الآن أو تخطَّ هذه الخطوة وأضفها لاحقًا." hidden>
+          <div class="exam-adder">
+            <label class="field">
+              <span>اسم الامتحان</span>
+              <input type="text" id="obExamTitle" maxlength="60" placeholder="مثال: امتحان منتصف الفصل">
+            </label>
+            <label class="field">
+              <span>المادة (اختياري)</span>
+              <input type="text" id="obExamSubject" maxlength="40" placeholder="مثال: الرياضيات">
+            </label>
+            <label class="field">
+              <span>التاريخ</span>
+              <input type="date" id="obExamDate">
+            </label>
+            <button class="btn btn-secondary" type="button" data-action="onboard-add-exam">إضافة الامتحان</button>
+          </div>
+          <ul class="exam-list" id="obExamList" aria-live="polite"></ul>
+          <small class="field-error" data-error-for="exam"></small>
+        </div>
+
+      </form>
+
+      <div class="onboard-nav">
+        <button class="btn btn-ghost" type="button" id="obBack" data-action="onboard-back">السابق</button>
+        <button class="btn btn-ghost" type="button" id="obSkip" data-action="onboard-skip" hidden>تخطي</button>
+        <button class="btn btn-primary" type="button" id="obNext" data-action="onboard-next">التالي</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="petScreen" class="screen" data-screen-id="pet-select" hidden>
+    <div class="pet-select-shell">
+      <h2 class="screen-title">اختر رفيق رحلتك</h2>
+      <p class="screen-sub">سيبدأ صغيرًا جدًا ويكبر معك كلما أنجزت.</p>
+      <div class="pet-stage">
+        <canvas id="petPreviewCanvas" aria-label="معاينة الحيوان الأليف"></canvas>
+        <div class="pet-stage-glow" aria-hidden="true"></div>
+      </div>
+      <div class="pet-options" id="petOptions" role="radiogroup" aria-label="اختيار الحيوان الأليف">
+        <label class="pet-option" data-pet="dragon">
+          <input type="radio" name="petSpecies" value="dragon" checked>
+          <span class="pet-option-body"><strong>تنين الجمر</strong><small>جريء ومتوهج</small></span>
+        </label>
+        <label class="pet-option" data-pet="owl">
+          <input type="radio" name="petSpecies" value="owl">
+          <span class="pet-option-body"><strong>بومة النجوم</strong><small>هادئة وحكيمة</small></span>
+        </label>
+        <label class="pet-option" data-pet="fox">
+          <input type="radio" name="petSpecies" value="fox">
+          <span class="pet-option-body"><strong>ثعلب الضباب</strong><small>ذكي وسريع</small></span>
+        </label>
+        <label class="pet-option" data-pet="wisp">
+          <input type="radio" name="petSpecies" value="wisp">
+          <span class="pet-option-body"><strong>كائن الشفق</strong><small>غامض ومضيء</small></span>
+        </label>
+      </div>
+      <form id="petNameForm" class="pet-name-form" novalidate autocomplete="off">
+        <label class="field">
+          <span>اسم رفيقك</span>
+          <input type="text" id="petNameInput" name="petName" maxlength="20" required placeholder="اختر اسمًا يعجبك">
+          <small class="field-error" data-error-for="petNameInput"></small>
+        </label>
+        <button class="btn btn-primary btn-xl" type="submit">ادخل العالم</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="game" class="screen screen-game" data-screen-id="game" hidden>
+
+    <header id="hudTop" class="hud-top">
+      <button class="hud-profile" type="button" data-action="open-view" data-view-target="pet" aria-label="الحيوان الأليف">
+        <span class="hud-avatar" id="hudAvatar" aria-hidden="true"></span>
+        <span class="hud-profile-text">
+          <strong id="hudName">طالب</strong>
+          <small id="hudPetLine">—</small>
+        </span>
+      </button>
+
+      <div class="hud-xp" aria-label="مستوى الخبرة">
+        <div class="hud-level"><span class="hud-level-label">المستوى</span><strong id="hudLevel">1</strong></div>
+        <div class="xp-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="xpTrack">
+          <span class="xp-fill" id="xpFill"></span>
+        </div>
+        <small class="xp-text" id="xpText">0 / 100 XP</small>
+      </div>
+
+      <div class="hud-currency" aria-label="الجواهر">
+        <svg class="icon"><use href="#i-gem"/></svg>
+        <strong id="hudGems">0</strong>
+      </div>
+
+      <button class="icon-btn hud-today-toggle" type="button" data-action="toggle-today" aria-label="مهام اليوم" aria-expanded="false">
+        <svg class="icon"><use href="#i-today"/></svg>
+        <span class="badge" id="todayBadge" hidden>0</span>
+      </button>
+    </header>
+
+    <aside id="todayPanel" class="today-panel" aria-label="مهام اليوم">
+      <div class="today-head">
+        <div>
+          <h2>مهام اليوم</h2>
+          <small id="todayDate"></small>
+        </div>
+        <button class="icon-btn" type="button" data-action="toggle-today" aria-label="إغلاق">
+          <svg class="icon"><use href="#i-close"/></svg>
+        </button>
+      </div>
+      <div class="today-summary" id="todaySummary"></div>
+      <div class="today-progress"><span id="todayProgressFill"></span></div>
+      <div class="today-explain" id="todayExplain" aria-live="polite"></div>
+      <div class="today-list" id="todayList"></div>
+      <div class="today-foot">
+        <button class="btn btn-secondary btn-block" type="button" data-action="replan">إعادة بناء الجدول</button>
+      </div>
+    </aside>
+
+    <div class="map-controls" id="mapControls">
+      <button class="icon-btn" type="button" data-action="map-zoom-in" aria-label="تقريب"><svg class="icon"><use href="#i-zoom-in"/></svg></button>
+      <button class="icon-btn" type="button" data-action="map-zoom-out" aria-label="إبعاد"><svg class="icon"><use href="#i-zoom-out"/></svg></button>
+      <button class="icon-btn" type="button" data-action="map-reset" aria-label="العودة إلى العرض العام"><svg class="icon"><use href="#i-home"/></svg></button>
+    </div>
+
+    <div id="islandOverlay" class="island-overlay" hidden>
+      <div class="island-head">
+        <button class="btn btn-ghost" type="button" data-action="island-exit">العودة إلى الخريطة</button>
+        <div class="island-title">
+          <h2 id="islandName">—</h2>
+          <small id="islandSub"></small>
+        </div>
+        <button class="btn btn-secondary" type="button" data-action="island-add-lecture">إضافة محاضرة جديدة</button>
+      </div>
+      <div class="island-body">
+        <div class="island-stats" id="islandStats"></div>
+        <div class="island-stages" id="islandStages"></div>
+      </div>
+    </div>
+
+    <div id="mapHint" class="map-hint" aria-hidden="true">اسحب للتحرك، وقرّب بالعجلة أو بإصبعين، واضغط على جزيرة للدخول</div>
+
+    <div id="islandTooltip" class="island-tooltip" hidden></div>
+
+    <div id="emptyWorld" class="empty-world" hidden>
+      <div class="glass-card">
+        <h2>عالمك ينتظر أول جزيرة</h2>
+        <p>أضف مادتك الأولى لتظهر جزيرتها في السماء.</p>
+        <button class="btn btn-primary" type="button" data-action="open-subject-modal">إضافة مادة</button>
+      </div>
+    </div>
+
+    <nav id="dock" class="dock" aria-label="التنقل الرئيسي">
+      <button class="dock-btn is-active" type="button" data-action="open-view" data-view-target="world" aria-label="العالم والخريطة"><svg class="icon"><use href="#i-map"/></svg><span>العالم</span></button>
+      <button class="dock-btn" type="button" data-action="open-view" data-view-target="today" aria-label="مهام اليوم"><svg class="icon"><use href="#i-today"/></svg><span>اليوم</span></button>
+      <button class="dock-btn" type="button" data-action="open-view" data-view-target="subjects" aria-label="المواد"><svg class="icon"><use href="#i-book"/></svg><span>المواد</span></button>
+      <button class="dock-btn" type="button" data-action="open-view" data-view-target="teachers" aria-label="المدرسون"><svg class="icon"><use href="#i-teacher"/></svg><span>المدرسون</span></button>
+      <button class="dock-btn" type="button" data-action="open-view" data-view-target="lectures" aria-label="المحاضرات"><svg class="icon"><use href="#i-lecture"/></svg><span>المحاضرات</span></button>
+      <button class="dock-btn" type="button" data-action="open-view" data-view-target="backlog" aria-label="مركز المتراكم"><svg class="icon"><use href="#i-backlog"/></svg><span>المتراكم</span></button>
+      <button class="dock-btn" type="button" data-action="open-view" data-view-target="sessions" aria-label="جلسات المذاكرة"><svg class="icon"><use href="#i-session"/></svg><span>الجلسات</span></button>
+      <button class="dock-btn" type="button" data-action="open-view" data-view-target="review" aria-label="المراجعة"><svg class="icon"><use href="#i-review"/></svg><span>المراجعة</span></button>
+      <button class="dock-btn" type="button" data-action="open-view" data-view-target="pet" aria-label="الحيوان الأليف"><svg class="icon"><use href="#i-pet"/></svg><span>الرفيق</span></button>
+      <button class="dock-btn" type="button" data-action="open-view" data-view-target="achievements" aria-label="الإنجازات والمكافآت"><svg class="icon"><use href="#i-trophy"/></svg><span>الإنجازات</span></button>
+      <button class="dock-btn" type="button" data-action="open-view" data-view-target="reports" aria-label="التقارير والإحصائيات"><svg class="icon"><use href="#i-chart"/></svg><span>التقارير</span></button>
+      <button class="dock-btn" type="button" data-action="open-view" data-view-target="settings" aria-label="الإعدادات والنسخ الاحتياطي"><svg class="icon"><use href="#i-gear"/></svg><span>الإعدادات</span></button>
+    </nav>
+
+    <div id="viewPanel" class="view-panel" hidden>
+      <div class="view-backdrop" data-action="close-view"></div>
+      <div class="view-sheet" role="dialog" aria-modal="true" aria-labelledby="viewTitle">
+        <header class="view-head">
+          <h2 id="viewTitle">—</h2>
+          <div class="view-head-actions" id="viewHeadActions"></div>
+          <button class="icon-btn" type="button" data-action="close-view" aria-label="إغلاق"><svg class="icon"><use href="#i-close"/></svg></button>
+        </header>
+
+        <div class="view-body">
+
+          <section class="view" data-view="today" hidden>
+            <div class="view-intro" id="todayViewIntro"></div>
+            <div class="week-strip" id="weekStrip"></div>
+            <div class="task-list" id="todayViewList"></div>
+          </section>
+
+          <section class="view" data-view="subjects" hidden>
+            <div class="view-toolbar">
+              <button class="btn btn-primary" type="button" data-action="open-subject-modal">إضافة مادة</button>
+            </div>
+            <div class="card-grid" id="subjectsList"></div>
+          </section>
+
+          <section class="view" data-view="teachers" hidden>
+            <div class="view-toolbar">
+              <button class="btn btn-primary" type="button" data-action="open-teacher-modal">إضافة مدرس</button>
+            </div>
+            <div class="card-grid" id="teachersList"></div>
+          </section>
+
+          <section class="view" data-view="lectures" hidden>
+            <div class="view-toolbar">
+              <label class="field field-inline">
+                <span>المادة</span>
+                <select id="lectureFilterSubject"></select>
+              </label>
+              <label class="field field-inline">
+                <span>المدرس</span>
+                <select id="lectureFilterTeacher"></select>
+              </label>
+              <label class="field field-inline">
+                <span>الحالة</span>
+                <select id="lectureFilterStatus">
+                  <option value="all">الكل</option>
+                  <option value="new">جديدة</option>
+                  <option value="progress">قيد المذاكرة</option>
+                  <option value="done">مكتملة</option>
+                  <option value="backlog">متراكمة</option>
+                </select>
+              </label>
+              <button class="btn btn-primary" type="button" data-action="open-lecture-modal">إضافة محاضرة</button>
+            </div>
+            <div class="lecture-list" id="lecturesList"></div>
+          </section>
+
+          <section class="view" data-view="backlog" hidden>
+            <div class="stat-grid" id="backlogStats"></div>
+            <div class="chart-card">
+              <h3>توزيع المتراكم حسب المادة</h3>
+              <canvas id="chartBacklogBySubject" width="640" height="260"></canvas>
+            </div>
+            <h3 class="section-title">الأعلى أولوية</h3>
+            <div class="lecture-list" id="backlogList"></div>
+          </section>
+
+          <section class="view" data-view="sessions" hidden>
+            <div class="view-toolbar">
+              <label class="field field-inline">
+                <span>الحالة</span>
+                <select id="sessionFilterStatus">
+                  <option value="all">الكل</option>
+                  <option value="pending">لم تبدأ</option>
+                  <option value="active">جارية</option>
+                  <option value="done">مكتملة</option>
+                  <option value="missed">لم تكتمل</option>
+                </select>
+              </label>
+              <label class="field field-inline">
+                <span>النوع</span>
+                <select id="sessionFilterType">
+                  <option value="all">الكل</option>
+                  <option value="study">مذاكرة وفهم</option>
+                  <option value="continue">استكمال</option>
+                  <option value="practice">حل</option>
+                  <option value="review">مراجعة</option>
+                  <option value="selftest">اختبار ذاتي</option>
+                </select>
+              </label>
+            </div>
+            <div class="session-list" id="sessionsList"></div>
+          </section>
+
+          <section class="view" data-view="review" hidden>
+            <div class="view-intro" id="reviewIntro"></div>
+            <h3 class="section-title">مراجعات مستحقة</h3>
+            <div class="session-list" id="reviewDueList"></div>
+            <h3 class="section-title">مراجعات قادمة</h3>
+            <div class="session-list" id="reviewUpcomingList"></div>
+          </section>
+
+          <section class="view" data-view="pet" hidden>
+            <div class="pet-view">
+              <div class="pet-view-stage">
+                <canvas id="petViewCanvas" aria-label="رفيقك"></canvas>
+                <div class="pet-stage-glow" aria-hidden="true"></div>
+              </div>
+              <div class="pet-view-info">
+                <h3 id="petViewName">—</h3>
+                <p id="petViewStage" class="pet-stage-label"></p>
+                <div class="xp-track"><span class="xp-fill" id="petXpFill"></span></div>
+                <small id="petXpText"></small>
+                <div class="pet-actions">
+                  <button class="btn btn-secondary" type="button" data-action="pet-jump">قفزة</button>
+                  <button class="btn btn-secondary" type="button" data-action="pet-cheer">احتفال</button>
+                  <button class="btn btn-secondary" type="button" data-action="pet-walk">تمشَّ معي</button>
+                </div>
+                <form id="petRenameForm" class="inline-form" novalidate autocomplete="off">
+                  <label class="field">
+                    <span>تغيير الاسم</span>
+                    <input type="text" id="petRenameInput" maxlength="20" required>
+                    <small class="field-error" data-error-for="petRenameInput"></small>
+                  </label>
+                  <button class="btn btn-ghost" type="submit">حفظ الاسم</button>
+                </form>
+              </div>
+            </div>
+            <h3 class="section-title">مراحل التطور</h3>
+            <div class="evolution-track" id="evolutionTrack"></div>
+          </section>
+
+          <section class="view" data-view="achievements" hidden>
+            <div class="stat-grid" id="achievementStats"></div>
+            <h3 class="section-title">الشارات</h3>
+            <div class="badge-grid" id="badgeGrid"></div>
+            <h3 class="section-title">المقتنيات</h3>
+            <div class="cosmetic-grid" id="cosmeticGrid"></div>
+            <h3 class="section-title">سجل الإنجازات</h3>
+            <ol class="achievement-log" id="achievementLog"></ol>
+          </section>
+
+          <section class="view" data-view="reports" hidden>
+            <div class="stat-grid" id="reportStats"></div>
+            <div class="chart-card">
+              <h3>وقت المذاكرة آخر 7 أيام</h3>
+              <canvas id="chartWeekly" width="640" height="260"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>تقدم المواد</h3>
+              <canvas id="chartSubjects" width="640" height="260"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>انخفاض المتراكم</h3>
+              <canvas id="chartBacklogTrend" width="640" height="260"></canvas>
+            </div>
+            <div class="chart-card">
+              <h3>الالتزام الأسبوعي</h3>
+              <canvas id="chartCommitment" width="640" height="260"></canvas>
+            </div>
+          </section>
+
+          <section class="view" data-view="settings" hidden>
+            <div class="settings-grid">
+
+              <div class="settings-card">
+                <h3>الملف الشخصي</h3>
+                <form id="profileForm" novalidate autocomplete="off">
+                  <label class="field"><span>الاسم</span><input type="text" id="setName" maxlength="40" required><small class="field-error" data-error-for="setName"></small></label>
+                  <label class="field"><span>الصف أو السنة</span><input type="text" id="setGrade" maxlength="40" required><small class="field-error" data-error-for="setGrade"></small></label>
+                  <label class="field"><span>البلد</span><input type="text" id="setCountry" maxlength="40"></label>
+                  <label class="field"><span>الهدف</span><input type="text" id="setGoal" maxlength="120"></label>
+                  <label class="field"><span>المستوى</span>
+                    <select id="setLevel">
+                      <option value="1">أحتاج لبداية قوية</option>
+                      <option value="2">متوسط</option>
+                      <option value="3">جيد</option>
+                      <option value="4">متقدم</option>
+                    </select>
+                  </label>
+                  <button class="btn btn-primary" type="submit">حفظ الملف</button>
+                </form>
+              </div>
+
+              <div class="settings-card">
+                <h3>أوقات المذاكرة</h3>
+                <form id="availabilityForm" novalidate autocomplete="off">
+                  <div class="days-minutes" id="setDailyMinutes">
+                    <label class="day-minutes"><span>السبت</span><input type="number" name="min-6" min="0" max="720" step="5" inputmode="numeric"><em>دقيقة</em></label>
+                    <label class="day-minutes"><span>الأحد</span><input type="number" name="min-0" min="0" max="720" step="5" inputmode="numeric"><em>دقيقة</em></label>
+                    <label class="day-minutes"><span>الاثنين</span><input type="number" name="min-1" min="0" max="720" step="5" inputmode="numeric"><em>دقيقة</em></label>
+                    <label class="day-minutes"><span>الثلاثاء</span><input type="number" name="min-2" min="0" max="720" step="5" inputmode="numeric"><em>دقيقة</em></label>
+                    <label class="day-minutes"><span>الأربعاء</span><input type="number" name="min-3" min="0" max="720" step="5" inputmode="numeric"><em>دقيقة</em></label>
+                    <label class="day-minutes"><span>الخميس</span><input type="number" name="min-4" min="0" max="720" step="5" inputmode="numeric"><em>دقيقة</em></label>
+                    <label class="day-minutes"><span>الجمعة</span><input type="number" name="min-5" min="0" max="720" step="5" inputmode="numeric"><em>دقيقة</em></label>
+                  </div>
+                  <fieldset class="chip-group">
+                    <legend>الأيام المشغولة</legend>
+                    <label class="chip"><input type="checkbox" name="busy" value="6"><span>السبت</span></label>
+                    <label class="chip"><input type="checkbox" name="busy" value="0"><span>الأحد</span></label>
+                    <label class="chip"><input type="checkbox" name="busy" value="1"><span>الاثنين</span></label>
+                    <label class="chip"><input type="checkbox" name="busy" value="2"><span>الثلاثاء</span></label>
+                    <label class="chip"><input type="checkbox" name="busy" value="3"><span>الأربعاء</span></label>
+                    <label class="chip"><input type="checkbox" name="busy" value="4"><span>الخميس</span></label>
+                    <label class="chip"><input type="checkbox" name="busy" value="5"><span>الجمعة</span></label>
+                  </fieldset>
+                  <fieldset class="chip-group">
+                    <legend>أيام الراحة</legend>
+                    <label class="chip"><input type="checkbox" name="rest" value="6"><span>السبت</span></label>
+                    <label class="chip"><input type="checkbox" name="rest" value="0"><span>الأحد</span></label>
+                    <label class="chip"><input type="checkbox" name="rest" value="1"><span>الاثنين</span></label>
+                    <label class="chip"><input type="checkbox" name="rest" value="2"><span>الثلاثاء</span></label>
+                    <label class="chip"><input type="checkbox" name="rest" value="3"><span>الأربعاء</span></label>
+                    <label class="chip"><input type="checkbox" name="rest" value="4"><span>الخميس</span></label>
+                    <label class="chip"><input type="checkbox" name="rest" value="5"><span>الجمعة</span></label>
+                  </fieldset>
+                  <small class="field-error" data-error-for="availability"></small>
+                  <button class="btn btn-primary" type="submit">حفظ الأوقات وإعادة الجدولة</button>
+                </form>
+              </div>
+
+              <div class="settings-card">
+                <h3>الامتحانات</h3>
+                <form id="examForm" class="exam-adder" novalidate autocomplete="off">
+                  <label class="field"><span>اسم الامتحان</span><input type="text" id="examTitle" maxlength="60" required><small class="field-error" data-error-for="examTitle"></small></label>
+                  <label class="field"><span>المادة</span><select id="examSubject"></select></label>
+                  <label class="field"><span>التاريخ</span><input type="date" id="examDate" required><small class="field-error" data-error-for="examDate"></small></label>
+                  <button class="btn btn-secondary" type="submit">إضافة امتحان</button>
+                </form>
+                <ul class="exam-list" id="examList"></ul>
+              </div>
+
+              <div class="settings-card">
+                <h3>فواصل المراجعة</h3>
+                <form id="reviewIntervalsForm" novalidate autocomplete="off">
+                  <p class="hint">أيام الفاصل بين المراجعات بعد إنهاء الجلسة أو المحاضرة.</p>
+                  <div class="interval-grid">
+                    <label class="field"><span>الأولى</span><input type="number" id="intv1" min="1" max="60" value="1" inputmode="numeric"></label>
+                    <label class="field"><span>الثانية</span><input type="number" id="intv2" min="1" max="90" value="3" inputmode="numeric"></label>
+                    <label class="field"><span>الثالثة</span><input type="number" id="intv3" min="1" max="120" value="7" inputmode="numeric"></label>
+                    <label class="field"><span>الرابعة</span><input type="number" id="intv4" min="1" max="180" value="14" inputmode="numeric"></label>
+                  </div>
+                  <small class="field-error" data-error-for="intervals"></small>
+                  <button class="btn btn-primary" type="submit">حفظ الفواصل</button>
+                </form>
+              </div>
+
+              <div class="settings-card">
+                <h3>الأداء والعرض</h3>
+                <label class="field"><span>جودة الرسوميات</span>
+                  <select id="setQuality">
+                    <option value="low">منخفضة</option>
+                    <option value="medium">متوسطة</option>
+                    <option value="high">عالية</option>
+                  </select>
+                </label>
+                <label class="switch"><input type="checkbox" id="setReduceMotion"><span>تقليل الحركة</span></label>
+                <label class="switch"><input type="checkbox" id="setSound"><span>المؤثرات الصوتية</span></label>
+              </div>
+
+              <div class="settings-card">
+                <h3>محرك التخطيط</h3>
+                <div class="engine-status" id="engineStatus">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  <div>
+                    <strong id="engineName">محرك التخطيط المحلي</strong>
+                    <small id="engineNote">الذكاء الاصطناعي الخارجي غير متصل. الجدولة تعمل بمنطق محلي واضح وقابل للتتبع.</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="settings-card">
+                <h3>النسخ الاحتياطي</h3>
+                <p class="hint">النسخة محفوظة على هذا الجهاز فقط ولا توجد مزامنة بين الأجهزة.</p>
+                <div class="btn-row">
+                  <button class="btn btn-secondary" type="button" data-action="export-backup"><svg class="icon"><use href="#i-download"/></svg><span>تصدير نسخة</span></button>
+                  <button class="btn btn-secondary" type="button" data-action="import-backup"><svg class="icon"><use href="#i-upload"/></svg><span>استيراد نسخة</span></button>
+                </div>
+                <input type="file" id="importFile" accept="application/json,.json" hidden>
+                <small class="field-error" data-error-for="importFile"></small>
+                <small class="hint" id="lastSaveText"></small>
+              </div>
+
+              <div class="settings-card settings-danger">
+                <h3>منطقة الخطر</h3>
+                <div class="btn-row">
+                  <button class="btn btn-ghost" type="button" data-action="logout">تسجيل الخروج</button>
+                  <button class="btn btn-danger" type="button" data-action="wipe-all">حذف كل البيانات</button>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<div id="modalLayer" class="modal-layer" hidden>
+
+  <div class="modal" id="modalSubject" role="dialog" aria-modal="true" aria-labelledby="modalSubjectTitle" hidden>
+    <form id="subjectForm" novalidate autocomplete="off">
+      <header class="modal-head">
+        <h2 id="modalSubjectTitle">إضافة مادة</h2>
+        <button class="icon-btn" type="button" data-action="close-modal" aria-label="إغلاق"><svg class="icon"><use href="#i-close"/></svg></button>
+      </header>
+      <input type="hidden" id="subjectId">
+      <div class="modal-body">
+        <label class="field"><span>اسم المادة</span><input type="text" id="subjectName" maxlength="40" required placeholder="مثال: اللغة العربية"><small class="field-error" data-error-for="subjectName"></small></label>
+
+        <fieldset class="swatch-group">
+          <legend>رمز الجزيرة</legend>
+          <label class="motif"><input type="radio" name="subjectMotif" value="scroll" checked><svg class="icon"><use href="#m-scroll"/></svg></label>
+          <label class="motif"><input type="radio" name="subjectMotif" value="globe"><svg class="icon"><use href="#m-globe"/></svg></label>
+          <label class="motif"><input type="radio" name="subjectMotif" value="sigma"><svg class="icon"><use href="#m-sigma"/></svg></label>
+          <label class="motif"><input type="radio" name="subjectMotif" value="flask"><svg class="icon"><use href="#m-flask"/></svg></label>
+          <label class="motif"><input type="radio" name="subjectMotif" value="atom"><svg class="icon"><use href="#m-atom"/></svg></label>
+          <label class="motif"><input type="radio" name="subjectMotif" value="pen"><svg class="icon"><use href="#m-pen"/></svg></label>
+          <label class="motif"><input type="radio" name="subjectMotif" value="landmark"><svg class="icon"><use href="#m-landmark"/></svg></label>
+          <label class="motif"><input type="radio" name="subjectMotif" value="code"><svg class="icon"><use href="#m-code"/></svg></label>
+          <label class="motif"><input type="radio" name="subjectMotif" value="leaf"><svg class="icon"><use href="#m-leaf"/></svg></label>
+        </fieldset>
+
+        <fieldset class="swatch-group">
+          <legend>لون المادة</legend>
+          <label class="swatch" style="--swatch:#8b5cf6"><input type="radio" name="subjectColor" value="#8b5cf6" checked><span></span></label>
+          <label class="swatch" style="--swatch:#38bdf8"><input type="radio" name="subjectColor" value="#38bdf8"><span></span></label>
+          <label class="swatch" style="--swatch:#34d399"><input type="radio" name="subjectColor" value="#34d399"><span></span></label>
+          <label class="swatch" style="--swatch:#fbbf24"><input type="radio" name="subjectColor" value="#fbbf24"><span></span></label>
+          <label class="swatch" style="--swatch:#fb7185"><input type="radio" name="subjectColor" value="#fb7185"><span></span></label>
+          <label class="swatch" style="--swatch:#f97316"><input type="radio" name="subjectColor" value="#f97316"><span></span></label>
+          <label class="swatch" style="--swatch:#2dd4bf"><input type="radio" name="subjectColor" value="#2dd4bf"><span></span></label>
+          <label class="swatch" style="--swatch:#a3e635"><input type="radio" name="subjectColor" value="#a3e635"><span></span></label>
+        </fieldset>
+
+        <div class="field-row">
+          <label class="field"><span>مستوى الصعوبة</span>
+            <select id="subjectDifficulty">
+              <option value="1">سهلة</option>
+              <option value="2">متوسطة السهولة</option>
+              <option value="3" selected>متوسطة</option>
+              <option value="4">صعبة</option>
+              <option value="5">صعبة جدًا</option>
+            </select>
+          </label>
+          <label class="field"><span>مستوى إتقانك الحالي</span>
+            <select id="subjectMastery">
+              <option value="1">ضعيف</option>
+              <option value="2" selected>متوسط</option>
+              <option value="3">جيد</option>
+              <option value="4">ممتاز</option>
+            </select>
+          </label>
+        </div>
+        <label class="field"><span>إجمالي المحاضرات المتوقعة (اختياري)</span><input type="number" id="subjectTotal" min="0" max="999" inputmode="numeric" placeholder="مثال: 40"><small class="field-error" data-error-for="subjectTotal"></small></label>
+      </div>
+      <footer class="modal-foot">
+        <button class="btn btn-ghost" type="button" data-action="close-modal">إلغاء</button>
+        <button class="btn btn-danger" type="button" id="subjectDeleteBtn" data-action="delete-subject" hidden>حذف المادة</button>
+        <button class="btn btn-primary" type="submit">حفظ المادة</button>
+      </footer>
+    </form>
+  </div>
+
+  <div class="modal" id="modalTeacher" role="dialog" aria-modal="true" aria-labelledby="modalTeacherTitle" hidden>
+    <form id="teacherForm" novalidate autocomplete="off">
+      <header class="modal-head">
+        <h2 id="modalTeacherTitle">إضافة مدرس</h2>
+        <button class="icon-btn" type="button" data-action="close-modal" aria-label="إغلاق"><svg class="icon"><use href="#i-close"/></svg></button>
+      </header>
+      <input type="hidden" id="teacherId">
+      <div class="modal-body">
+        <label class="field"><span>اسم المدرس</span><input type="text" id="teacherName" maxlength="40" required><small class="field-error" data-error-for="teacherName"></small></label>
+        <label class="field"><span>المادة</span><select id="teacherSubject" required></select><small class="field-error" data-error-for="teacherSubject"></small></label>
+
+        <fieldset class="swatch-group">
+          <legend>رمز المدرس</legend>
+          <label class="motif"><input type="radio" name="teacherAvatar" value="sage" checked><svg class="icon"><use href="#i-teacher"/></svg></label>
+          <label class="motif"><input type="radio" name="teacherAvatar" value="scroll"><svg class="icon"><use href="#m-scroll"/></svg></label>
+          <label class="motif"><input type="radio" name="teacherAvatar" value="atom"><svg class="icon"><use href="#m-atom"/></svg></label>
+          <label class="motif"><input type="radio" name="teacherAvatar" value="pen"><svg class="icon"><use href="#m-pen"/></svg></label>
+          <label class="motif"><input type="radio" name="teacherAvatar" value="landmark"><svg class="icon"><use href="#m-landmark"/></svg></label>
+          <label class="motif"><input type="radio" name="teacherAvatar" value="sigma"><svg class="icon"><use href="#m-sigma"/></svg></label>
+        </fieldset>
+
+        <fieldset class="chip-group">
+          <legend>أيام نشر المحاضرات</legend>
+          <label class="chip"><input type="checkbox" name="publishDays" value="6"><span>السبت</span></label>
+          <label class="chip"><input type="checkbox" name="publishDays" value="0"><span>الأحد</span></label>
+          <label class="chip"><input type="checkbox" name="publishDays" value="1"><span>الاثنين</span></label>
+          <label class="chip"><input type="checkbox" name="publishDays" value="2"><span>الثلاثاء</span></label>
+          <label class="chip"><input type="checkbox" name="publishDays" value="3"><span>الأربعاء</span></label>
+          <label class="chip"><input type="checkbox" name="publishDays" value="4"><span>الخميس</span></label>
+          <label class="chip"><input type="checkbox" name="publishDays" value="5"><span>الجمعة</span></label>
+        </fieldset>
+        <small class="field-error" data-error-for="publishDays"></small>
+
+        <div class="field-row">
+          <label class="field"><span>وقت النشر المتوقع</span><input type="time" id="teacherPublishTime" value="18:00"></label>
+          <label class="field"><span>متوسط مدة المحاضرة (دقيقة)</span><input type="number" id="teacherAvgDuration" min="5" max="480" step="5" value="45" inputmode="numeric" required><small class="field-error" data-error-for="teacherAvgDuration"></small></label>
+        </div>
+        <div class="field-row">
+          <label class="field"><span>رقم أول محاضرة تتابعها</span><input type="number" id="teacherStartNumber" min="1" max="999" value="1" inputmode="numeric" required><small class="field-error" data-error-for="teacherStartNumber"></small></label>
+          <label class="field"><span>آخر محاضرة نُشرت حتى الآن</span><input type="number" id="teacherPublished" min="0" max="999" value="0" inputmode="numeric" required><small class="field-error" data-error-for="teacherPublished"></small></label>
+        </div>
+        <label class="field"><span>إجمالي المحاضرات المتوقعة (اختياري)</span><input type="number" id="teacherExpectedTotal" min="0" max="999" inputmode="numeric"><small class="field-error" data-error-for="teacherExpectedTotal"></small></label>
+        <label class="field"><span>كم محاضرة أنجزتها من المنشورة؟</span><input type="number" id="teacherDoneInitial" min="0" max="999" value="0" inputmode="numeric"><small class="field-error" data-error-for="teacherDoneInitial"></small></label>
+        <p class="hint">عند إضافة مدرس جديد ينشئ النظام المحاضرات المنشورة تلقائيًا بأرقامها، والمحاضرات غير المنجزة تدخل في المتراكم.</p>
+      </div>
+      <footer class="modal-foot">
+        <button class="btn btn-ghost" type="button" data-action="close-modal">إلغاء</button>
+        <button class="btn btn-danger" type="button" id="teacherDeleteBtn" data-action="delete-teacher" hidden>حذف المدرس</button>
+        <button class="btn btn-primary" type="submit">حفظ المدرس</button>
+      </footer>
+    </form>
+  </div>
+
+  <div class="modal" id="modalLecture" role="dialog" aria-modal="true" aria-labelledby="modalLectureTitle" hidden>
+    <form id="lectureForm" novalidate autocomplete="off">
+      <header class="modal-head">
+        <h2 id="modalLectureTitle">إضافة محاضرة جديدة</h2>
+        <button class="icon-btn" type="button" data-action="close-modal" aria-label="إغلاق"><svg class="icon"><use href="#i-close"/></svg></button>
+      </header>
+      <input type="hidden" id="lectureId">
+      <div class="modal-body">
+        <label class="field"><span>المدرس</span><select id="lectureTeacher" required></select><small class="field-error" data-error-for="lectureTeacher"></small></label>
+        <p class="hint" id="lectureTeacherHint"></p>
+        <div class="field-row">
+          <label class="field"><span>رقم المحاضرة</span><input type="number" id="lectureNumber" min="1" max="999" inputmode="numeric" required><small class="field-error" data-error-for="lectureNumber"></small></label>
+          <label class="field"><span>تاريخ النشر</span><input type="date" id="lecturePublishedAt" required><small class="field-error" data-error-for="lecturePublishedAt"></small></label>
+        </div>
+        <label class="field"><span>عنوان المحاضرة (اختياري)</span><input type="text" id="lectureTitle" maxlength="80" placeholder="مثال: أسلوب الشرط"></label>
+        <label class="field"><span>ملاحظات أو محتوى (اختياري)</span><textarea id="lectureNotes" rows="2" maxlength="300"></textarea></label>
+        <div class="field-row">
+          <label class="field"><span>مدة المحاضرة (دقيقة)</span><input type="number" id="lectureDuration" min="5" max="480" step="5" value="45" inputmode="numeric" required><small class="field-error" data-error-for="lectureDuration"></small></label>
+          <label class="field"><span>صعوبة المحتوى</span>
+            <select id="lectureDifficulty">
+              <option value="1">سهل</option>
+              <option value="2">متوسط السهولة</option>
+              <option value="3" selected>متوسط</option>
+              <option value="4">صعب</option>
+              <option value="5">صعب جدًا</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="session-builder">
+          <div class="session-builder-head">
+            <h3>جلسات المحاضرة</h3>
+            <div class="btn-row">
+              <button class="btn btn-ghost" type="button" data-action="suggest-sessions">اقتراح الجلسات</button>
+              <button class="btn btn-secondary" type="button" data-action="add-session-row">إضافة جلسة</button>
+            </div>
+          </div>
+          <p class="hint" id="sessionSuggestNote"></p>
+          <div id="sessionBuilder" class="session-rows"></div>
+          <small class="field-error" data-error-for="sessionBuilder"></small>
+        </div>
+      </div>
+      <footer class="modal-foot">
+        <button class="btn btn-ghost" type="button" data-action="close-modal">إلغاء</button>
+        <button class="btn btn-danger" type="button" id="lectureDeleteBtn" data-action="delete-lecture" hidden>حذف المحاضرة</button>
+        <button class="btn btn-primary" type="submit">حفظ المحاضرة</button>
+      </footer>
+    </form>
+  </div>
+
+  <div class="modal" id="modalSession" role="dialog" aria-modal="true" aria-labelledby="modalSessionTitle" hidden>
+    <form id="sessionForm" novalidate autocomplete="off">
+      <header class="modal-head">
+        <h2 id="modalSessionTitle">جلسة مذاكرة</h2>
+        <button class="icon-btn" type="button" data-action="close-modal" aria-label="إغلاق"><svg class="icon"><use href="#i-close"/></svg></button>
+      </header>
+      <input type="hidden" id="sessionId">
+      <input type="hidden" id="sessionLectureId">
+      <div class="modal-body">
+        <p class="hint" id="sessionLectureLabel"></p>
+        <label class="field"><span>نوع الجلسة</span>
+          <select id="sessionType" required>
+            <option value="study">مذاكرة وفهم</option>
+            <option value="continue">استكمال</option>
+            <option value="practice">حل</option>
+            <option value="review">مراجعة</option>
+            <option value="selftest">اختبار ذاتي</option>
+          </select>
+        </label>
+        <div class="field-row">
+          <label class="field"><span>المدة المقدرة (دقيقة)</span><input type="number" id="sessionMinutes" min="5" max="480" step="5" value="30" inputmode="numeric" required><small class="field-error" data-error-for="sessionMinutes"></small></label>
+          <label class="field"><span>الموعد</span><input type="date" id="sessionDate"></label>
+        </div>
+        <label class="field"><span>وصف المطلوب</span><textarea id="sessionDescription" rows="3" maxlength="300" placeholder="مثال: فهم أسلوب الشرط وتسجيل الملاحظات"></textarea></label>
+        <label class="field"><span>مستوى الإنجاز</span>
+          <input type="range" id="sessionProgress" min="0" max="100" step="5" value="0">
+          <output id="sessionProgressOut" for="sessionProgress">0%</output>
+        </label>
+      </div>
+      <footer class="modal-foot">
+        <button class="btn btn-ghost" type="button" data-action="close-modal">إلغاء</button>
+        <button class="btn btn-danger" type="button" id="sessionDeleteBtn" data-action="delete-session" hidden>حذف الجلسة</button>
+        <button class="btn btn-primary" type="submit">حفظ الجلسة</button>
+      </footer>
+    </form>
+  </div>
+
+  <div class="modal" id="modalRating" role="dialog" aria-modal="true" aria-labelledby="modalRatingTitle" hidden>
+    <div class="modal-inner">
+      <header class="modal-head">
+        <h2 id="modalRatingTitle">كيف كان فهمك؟</h2>
+      </header>
+      <div class="modal-body">
+        <p class="hint" id="ratingContext"></p>
+        <div class="rating-grid" role="group" aria-label="تقييم الفهم">
+          <button class="rating-btn" type="button" data-rating="1">ضعيف</button>
+          <button class="rating-btn" type="button" data-rating="2">متوسط</button>
+          <button class="rating-btn" type="button" data-rating="3">جيد</button>
+          <button class="rating-btn" type="button" data-rating="4">ممتاز</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal-small" id="modalConfirm" role="alertdialog" aria-modal="true" aria-labelledby="confirmTitle" aria-describedby="confirmText" hidden>
+    <div class="modal-inner">
+      <header class="modal-head"><h2 id="confirmTitle">تأكيد</h2></header>
+      <div class="modal-body"><p id="confirmText"></p>
+        <label class="field" id="confirmTypeWrap" hidden>
+          <span id="confirmTypeLabel">اكتب كلمة التأكيد</span>
+          <input type="text" id="confirmTypeInput" autocomplete="off">
+        </label>
+      </div>
+      <footer class="modal-foot">
+        <button class="btn btn-ghost" type="button" id="confirmCancel">إلغاء</button>
+        <button class="btn btn-danger" type="button" id="confirmOk">تأكيد</button>
+      </footer>
+    </div>
+  </div>
+
+  <div class="modal" id="modalSessionRun" role="dialog" aria-modal="true" aria-labelledby="runTitle" hidden>
+    <div class="modal-inner">
+      <header class="modal-head">
+        <h2 id="runTitle">جلسة جارية</h2>
+        <button class="icon-btn" type="button" data-action="run-close" aria-label="إغلاق"><svg class="icon"><use href="#i-close"/></svg></button>
+      </header>
+      <div class="modal-body run-body">
+        <p class="run-context" id="runContext"></p>
+        <div class="run-timer" id="runTimer" aria-live="off">00:00</div>
+        <p class="run-desc" id="runDesc"></p>
+        <div class="run-progress"><span id="runProgressFill"></span></div>
+      </div>
+      <footer class="modal-foot">
+        <button class="btn btn-ghost" type="button" data-action="run-pause" id="runPauseBtn">إيقاف مؤقت</button>
+        <button class="btn btn-secondary" type="button" data-action="run-postpone">لم أكملها</button>
+        <button class="btn btn-primary" type="button" data-action="run-finish">إنهاء الجلسة</button>
+      </footer>
+    </div>
+  </div>
+
+  <div class="modal modal-small" id="modalReward" role="dialog" aria-modal="true" aria-labelledby="rewardTitle" hidden>
+    <div class="modal-inner reward">
+      <div class="reward-burst" aria-hidden="true"></div>
+      <h2 id="rewardTitle">إنجاز جديد</h2>
+      <p id="rewardText"></p>
+      <div class="reward-stats" id="rewardStats"></div>
+      <button class="btn btn-primary btn-block" type="button" data-action="close-reward">رائع</button>
+    </div>
+  </div>
+
+</div>
+
+<div id="fxLayer" class="fx-layer" aria-hidden="true"></div>
+<div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js" defer></script>
+</body>
+</html>
